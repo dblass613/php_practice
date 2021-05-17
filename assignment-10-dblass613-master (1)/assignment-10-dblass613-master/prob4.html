@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Problem 4</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css" />
+    <script type="text/JavaScript" src="http://code.jquery.com/jquery-1.10.2.js">
+ </script>
+    <script type="text/JavaScript" src="http://code.jquery.com/ui/1.11.2/jquery-ui.js">
+ </script>
+    <script type="text/JavaScript" src="prob4.js">
+ </script>
+
+    <script>
+        $( function() {
+            $( "#datepicker" ).datepicker();
+        } );
+        $( function() {
+        $( "#accordion" ).accordion();
+        } );
+    </script>
+
+</head>
+
+<body>
+    <form action="prob4.php" method = "GET">
+        <div id="accordion">
+                <h3>Date</h3>
+            <div class="panel">
+                    <p>Date: <input type="text" id="datepicker"></p>
+            </div>
+
+            <h3>Name</h3>
+            <div class="panel">
+                <fieldset>
+                    <p> <input type="text" name="first"> </p>
+                    <p> <input type="text" name="last"> </p>
+                </fieldset>
+            </div>
+        </div>
+        <p id="sub"><input type="submit" value="Submit" /></p>
+    </form>
+</body>
+
+</html>
